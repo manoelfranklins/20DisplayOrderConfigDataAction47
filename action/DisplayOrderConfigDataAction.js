@@ -397,8 +397,13 @@ sap.ui.define([
 
         _escapeCsv(sValue) {
             if (!sValue) return "";
-            const s = String(sValue);
-            if (s.includes(",") || s.includes("\n") || s.includes('"')) {
+            let s = String(sValue);
+            // Prefix formula-injection trigger characters so spreadsheets treat
+            // the cell as plain text rather than executing it as a formula.
+            if (/^[=+\-@\t\r]/.test(s)) {
+                s = "'" + s;
+            }
+            if (s.includes(",") || s.includes("\n") || s.includes('"') || s.includes("'")) {
                 return '"' + s.replace(/"/g, '""') + '"';
             }
             return s;
