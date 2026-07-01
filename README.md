@@ -46,12 +46,18 @@ When assigned to a button in Manage PODs 2.0 app, this Action reads the selected
    - **Source Code**: Browse and Select the ZIP file
 6. Click **Upload**
 
+<img width="1895" height="672" alt="image" src="https://github.com/user-attachments/assets/80b37e91-6285-45fe-8ac6-5cfc601031f3" />
+
 ## Configuration in Manage PODs 2.0 app
 
 1. Open your POD in **Manage PODs 2.0 app**
 2. Select the button you want to trigger this action, ex: 'Start' button
-3. In the button's **Action** property, search for **"Display Order Config Data"**
-4. Assign it — no further configuration is required
+3. In 'Propertes' tab, under 'Events', click 'Edit Actions` for 'Press' event
+4. Click '+' to add a new Action
+5. Search for **"Display Order Config Data"**, click to add
+6. Click 'Apply`, save and run the POD.
+
+<img width="1918" height="628" alt="image" src="https://github.com/user-attachments/assets/b58df66a-8b06-4502-91f6-86797e2c21b3" />
 
 ## Usage
 
@@ -62,6 +68,8 @@ When assigned to a button in Manage PODs 2.0 app, this Action reads the selected
 5. Click **Attribute** or **Value** column headers to sort
 6. Click **Export CSV** to download the data
 7. Click **Close** to dismiss
+
+<img width="1915" height="803" alt="image" src="https://github.com/user-attachments/assets/91ae886b-e89f-4bc6-ac9a-3cec200339f2" />
 
 ## API Used
 
