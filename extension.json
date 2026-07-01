@@ -1,0 +1,9 @@
+{
+    "widgets": [],
+    "actions": [
+        {
+            "modulePath": "custom/displayconfigaction/action/DisplayOrderConfigDataAction",
+            "type": "custom.displayconfigaction.action.DisplayOrderConfigDataAction"
+        }
+    ]
+}
